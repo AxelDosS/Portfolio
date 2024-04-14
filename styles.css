@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ddd; /* Fond d'écran gris */
+}
+
+.loader {
+    border: 8px solid #f3f3f3; /* Gris clair */
+    border-top: 8px solid #3498db; /* Bleu */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite; /* Animation de rotation */
+    position: fixed; /* Position fixe pour couvrir toute la fenêtre */
+    top: 50%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    margin-top: -25px; /* Ajustement pour centrer verticalement */
+    margin-left: -25px; /* Ajustement pour centrer horizontalement */
+    z-index: 9999; /* Mettre au-dessus de tout autre contenu */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Aligner les éléments de l'en-tête */
+    align-items: center; /* Aligner verticalement les éléments de l'en-tête */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #333;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #e2e2e2; /* Couleur du texte */
+}
+
+.contact-info a i {
+    margin-right: 5px;
+}
+.project-carousel {
+    text-align: center; /* Centre le contenu horizontalement */
+    overflow: hidden; /* Masque tout contenu qui dépasse de la zone du carrousel */
+    margin: 0 auto; /* Centre le carrousel horizontalement en utilisant la marge automatique */
+    max-width: 100%; /* Limite la largeur maximale du carrousel à 100% de la largeur de son conteneur */
+    padding: 10px; /* Ajoute un espacement intérieur de 10 pixels pour le carrousel */
+}
+
+.project-carousel img {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    height: 200px; /* Réduire la hauteur des images à 200 pixels */
+    object-fit: contain; /* Ajuster les images pour qu'elles s'adaptent entièrement à la zone d'affichage */
+}
+.project-carousel-container {
+    position: relative;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    right: -20px; /* Ajustez cette valeur pour positionner l'icône selon vos besoins */
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #000; /* Couleur de l'icône */
+    font-size: 24px; /* Taille de l'icône */
+}
+
+/* Ajustez ces styles selon l'icône utilisée */
+.carousel-arrow i {
+    color : red;
+}
+
+
+
+
+
+
